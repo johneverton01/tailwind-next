@@ -1,4 +1,4 @@
-import * as Input from "@/components/Input";
+import * as Input from "@/components/input";
 import { SettingsTabs } from "@/components/SettingsTabs";
 import { Mail, UploadCloud, User } from "lucide-react";
 
@@ -16,8 +16,17 @@ export default function Home() {
             </span>
           </div>
           <div className="flex items-center gap-2">
-            <button className="rounded-lg px-4 py-2 font-semibold shadow-sm border border-zinc-300 text-zinc-700 hover:bg-zinc-50" type="button">Cancel</button>
-            <button className="rounded-lg px-4 py-2 font-semibold shadow-sm bg-violet-600 text-white hover:bg-violet-700" type="submit" form="settings" >Save</button>
+            <button 
+              className="rounded-lg px-4 py-2 font-semibold shadow-sm border border-zinc-300 text-zinc-700 hover:bg-zinc-50" 
+              type="button">
+                Cancel
+            </button>
+            <button 
+              className="rounded-lg px-4 py-2 font-semibold shadow-sm bg-violet-600 text-white hover:bg-violet-700" 
+              type="submit" 
+              form="settings">
+                Save
+            </button>
           </div>
         </div>
         <form id="settings" action="" className="mt-6 flex flex-col w-full gap-5 divide-y divide-zinc-200">
